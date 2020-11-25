@@ -1,0 +1,9 @@
+telegram:
+    api_id: my.telegram.org
+    api_hash: my.telegram.org
+    bot_token: t.me/BotFather
+config:
+    sudo_id:
+        - 782144712
+        - 558772678
+    mongo_uri: mongodb.com
