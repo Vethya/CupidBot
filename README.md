@@ -1,5 +1,5 @@
 # Cupid Bot
-A python3 modular cupid bot for picking couple in telegram groups. This bot is inspired by [SIPPERINGbot](https://t.me/SHIPPERINGbot)
+A python3 modular cupid bot for picking couple in telegram groups. This bot is inspired by [SHIPPERINGbot](https://t.me/SHIPPERINGbot)
 ## Installation
 ### Termux
 1. Install Python
