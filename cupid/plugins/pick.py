@@ -35,9 +35,9 @@ async def pick_couple(client, m):
             await aw.edit_text('Not enough gender registered user!')
             return
     else:
-        if not cachedb.get_cache(m.chat.id):
+        if not await cachedb.get_cache(m.chat.id):
             async for member in client.iter_chat_members(m.chat.id):
-                if not member.user.is_bot and member is not None and member.user.id not in BLACKLIST and member.user.id not in [user['user_id'] for user in await ignoredb.list_ignored_users()]:
+                if not member.user.is_bot and member is not None and member.user.id not in BLACKLIST:
                     list_chat_members.append(member.user.id)
             await cachedb.cache_members(m.chat.id, list_chat_members)
         else:
